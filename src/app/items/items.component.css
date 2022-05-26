@@ -1,11 +1,13 @@
-.item-selector__container{
+.item--selector {
     width:100%;
     display: grid;
-    
     grid-template-columns: repeat(2, 1fr);
-    flex-wrap: wrap;
 }
 
+.item-selector__container{
+    width:100%;
+   
+}
 
 @media screen and (max-width: 850px){
     .item-selector__container{

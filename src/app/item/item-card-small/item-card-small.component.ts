@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ItemsService } from 'src/app/items/items.service';
 
 @Component({
   selector: 'app-item-card-small',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ItemCardSmallComponent implements OnInit {
 
   @Input() item:any;
-  constructor() { }
+  constructor(public itemService:ItemsService) { }
 
   ngOnInit(): void {
   }
@@ -16,6 +17,7 @@ export class ItemCardSmallComponent implements OnInit {
   //Seleccionar articulo para cargar
   selectItem(id:number){
     alert(id)
+    this.itemService.getAnItem(id)
   }
 
 }

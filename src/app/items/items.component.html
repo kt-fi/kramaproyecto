@@ -1,8 +1,12 @@
 <div class="container">
+    <h1 class="item--selector__header">SELECCIONA UNA ITEM</h1>
     <div class="item--selector">    
-        <h1 class="item--selector__header">SELECCIONA UNA ITEM</h1>
+        
         <ul class="item-selector__container">
             <app-item-card-small *ngFor="let item of items" [item]="item"></app-item-card-small>
         </ul>
+        <div class="item--selected">
+            <app-item></app-item>
+        </div>
     </div>
 </div>

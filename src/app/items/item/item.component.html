@@ -1,1 +1,8 @@
-<p>item works!</p>
+
+  <p *ngIf="!selectedItem; else itemSelected" >Please select an item</p>  
+
+
+<ng-template #itemSelected>
+   <p>{{selectedItem.description}}</p> 
+</ng-template>
+

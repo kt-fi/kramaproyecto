@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Family } from 'src/app/shared/family';
 
 @Component({
@@ -10,7 +11,7 @@ export class FamilyCardComponent implements OnInit {
 
   @Input() family?: Family;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -18,6 +19,7 @@ export class FamilyCardComponent implements OnInit {
   //Seleccionar familia para cargar
   selectFamily(id:number){
     alert(id)
+    this.router.navigate(['/items', id])
   } 
 
 }
