@@ -1,3 +1,3 @@
 export class Family {
-    constructor(private id: number, familyName: string){}
+    constructor(public id: number, public description: string){}
 }

@@ -2,10 +2,7 @@
     <div class="family--selector">    
         <h1 class="family--selector__header">SELECCIONA UNA CATEGORÍA</h1>
         <ul class="family-selector__container">
-            <li class="family-selector__item">Family 1</li>
-            <li class="family-selector__item">Family 1</li>
-            <li class="family-selector__item">Family 1</li>
-            <li class="family-selector__item">Family 1</li>
+            <app-family-card *ngFor="let family of families"  [family]="family"></app-family-card>
         </ul>
     </div>
 </div>

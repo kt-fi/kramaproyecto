@@ -1,0 +1,17 @@
+.family--card {
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    margin: 5px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* CENTRALIZE TEXT */
+.family--card__description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

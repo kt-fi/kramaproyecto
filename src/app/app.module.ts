@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FamilySelectorComponent } from './family-selector/family-selector.component';
 import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './items/item/item.component';
+import { FamilyCardComponent } from './family-selector/family-card/family-card.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ItemComponent } from './items/item/item.component';
     FamilySelectorComponent,
     ItemsComponent,
     ItemComponent,
+    FamilyCardComponent,
   ],
   imports: [
     BrowserModule
