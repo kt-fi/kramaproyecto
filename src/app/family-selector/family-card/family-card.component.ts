@@ -15,5 +15,10 @@ export class FamilyCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Seleccionar familia para cargar
+  selectFamily(id:number){
+    alert(id)
+  } 
+
 }
 

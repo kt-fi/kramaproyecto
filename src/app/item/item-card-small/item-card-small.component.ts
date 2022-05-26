@@ -13,4 +13,9 @@ export class ItemCardSmallComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Seleccionar articulo para cargar
+  selectItem(id:number){
+    alert(id)
+  }
+
 }

@@ -1,4 +1,4 @@
-<div *ngIf="family">
+<div *ngIf="family" (click)="selectFamily(family.id)">
    <div class="family--card">
        <div class="family--card__description">
            {{ family.description }}

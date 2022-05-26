@@ -7,6 +7,11 @@
     border: 1px solid black;
 }
 
+.item:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
 img{
     width: 100%;
 }
