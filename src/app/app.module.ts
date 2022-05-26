@@ -7,6 +7,7 @@ import { FamilySelectorComponent } from './family-selector/family-selector.compo
 import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './items/item/item.component';
 import { FamilyCardComponent } from './family-selector/family-card/family-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FamilyCardComponent } from './family-selector/family-card/family-card.c
     FamilyCardComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

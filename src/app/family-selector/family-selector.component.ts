@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Family } from '../shared/family';
+import { FamilyService } from './family.service';
 
 @Component({
   selector: 'app-family-selector',
@@ -17,9 +18,10 @@ export class FamilySelectorComponent implements OnInit {
     new Family(4, "Family 4"),
   ]
 
-  constructor() { }
+  constructor( public familyService: FamilyService) { }
 
   ngOnInit(): void {
+    this.familyService.getFamilies()
   }
 
 }
