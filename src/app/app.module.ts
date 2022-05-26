@@ -9,6 +9,7 @@ import { ItemComponent } from './items/item/item.component';
 import { FamilyCardComponent } from './family-selector/family-card/family-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ItemCardSmallComponent } from './item/item-card-small/item-card-small.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
     ItemsComponent,
     ItemComponent,
     FamilyCardComponent,
+    ItemCardSmallComponent,
   ],
   imports: [
     BrowserModule,
