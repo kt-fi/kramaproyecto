@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/*RESET CSS*/
+* {
+    padding: 0;
+    margin: 0; }
+  
+  *:focus {
+    outline: none; }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; }
+
+    .container {
+      margin: 20px;
+    }
