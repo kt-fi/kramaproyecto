@@ -1,3 +1,4 @@
+
 .family--card {
     position: relative;
     width: 30vw;
@@ -7,6 +8,13 @@
     border: 1px solid black;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 760px) {
+    .family--card{
+        width: 90vw;
+    }
+}
+
 
 /* CENTRALIZE TEXT */
 .family--card__description{

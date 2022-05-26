@@ -8,6 +8,7 @@ import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './items/item/item.component';
 import { FamilyCardComponent } from './family-selector/family-card/family-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

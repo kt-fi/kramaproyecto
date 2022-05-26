@@ -21,7 +21,14 @@ export class FamilySelectorComponent implements OnInit {
   constructor( public familyService: FamilyService) { }
 
   ngOnInit(): void {
-    this.familyService.getFamilies()
+    this.familyService.getFamilies().subscribe(
+      (data) => {
+       this.families = data;
+      },
+      (err) =>{
+        console.log("An error has occured")
+      }
+    )
   }
 
 }
