@@ -1,0 +1,26 @@
+.item-selector__container{
+    width:100%;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 90%;
+    margin: 2.5%;
+    padding: 8px;
+    display: grid;   
+    grid-template-columns: 60% 40%;
+    border: 1px solid black;
+}
+
+img{
+    width: 100%;
+}
+
+@media screen and (max-width: 850px){
+    .item-selector__container{
+        grid-template-columns: 1fr;
+    }
+}
