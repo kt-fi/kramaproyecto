@@ -7,9 +7,7 @@ import { ItemsComponent } from './items/items.component';
 const appRoutes: Routes = [
   {path: "", component: FamilySelectorComponent, pathMatch: 'full'},
   {path: "home", component: FamilySelectorComponent},
-  {path: "items", component: ItemsComponent, children:[
-    {path: ":id", component: ItemsComponent}
-  ]}
+  {path: "items/:id", component: ItemsComponent}
 ]
 
 @NgModule({

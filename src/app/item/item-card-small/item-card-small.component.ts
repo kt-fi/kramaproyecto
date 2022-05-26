@@ -16,7 +16,6 @@ export class ItemCardSmallComponent implements OnInit {
 
   //Seleccionar articulo para cargar
   selectItem(id:number){
-    alert(id)
     this.itemService.getAnItem(id)
   }
 

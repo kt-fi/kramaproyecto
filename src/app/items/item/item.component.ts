@@ -9,14 +9,14 @@ import { ItemsService } from '../items.service';
 export class ItemComponent implements OnInit {
 
 
-  get selectedItem(){
-    return this.itemService.selectedItem[0]
+  get selectedItem() {
+    return this.itemService.selectedItem
   }
 
   constructor(public itemService:ItemsService) { }
 
   ngOnInit(): void {
-   
+    
   }
 
 }
