@@ -5,6 +5,7 @@
     display: grid;   
     grid-template-columns: 60% 40%;
     border: 1px solid black;
+    background-color: white;
 }
 
 .item:hover {
@@ -21,9 +22,7 @@
     height: 90%;
 }
 
-.item--price {
-    background-color: ;
-}
+
 
 img{
     width: 100%;

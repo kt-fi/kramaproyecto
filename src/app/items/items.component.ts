@@ -22,8 +22,8 @@ export class ItemsComponent implements OnInit {
 
   // Call Service para obtener family de articulos desde api para renderizar , utilizando param para family id para seleccionar familia
   private getAllItems() {
-    this.route.paramMap.subscribe(params => {
-      this.familyId = params.get('id');
+    this.route.params.subscribe(params => {
+      this.familyId = params['id'];
     });
     this.itemsService.getAllItemsFamily(this.familyId)
     .subscribe((foundItems) => {
