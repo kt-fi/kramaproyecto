@@ -1,7 +1,7 @@
 <!-- plantilla para cuando no esta seleccionado ningun elemento -->
-<div class="item container" *ngIf="!selectedItem; else itemSelected">
+<div [ngClass]="{'item': selectedItem}" class="item container" *ngIf="!selectedItem; else itemSelected">
     <div class="item--container">
-        <p>Please select an item</p>  
+        <p>Por favor selecciona un artículo</p>  
     </div>
 </div>
 

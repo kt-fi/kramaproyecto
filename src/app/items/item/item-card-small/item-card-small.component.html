@@ -1,4 +1,4 @@
-<li class="item" (click)="selectItem(item.id)">
+<li class="item" id="item" [ngClass]="{'itemHighlight': item.id === chosenItem}" (click)="selectItem(item.id)">
     <div class="item--info" >
         <h3 class="item--description">{{item.description}}</h3>
         <p class="item--price"> Precio: <strong>{{item.price | currency: 'EUR': true}}</strong></p>

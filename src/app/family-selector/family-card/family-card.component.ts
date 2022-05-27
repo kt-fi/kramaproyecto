@@ -18,7 +18,6 @@ export class FamilyCardComponent implements OnInit {
 
   //Seleccionar familia para cargar
   selectFamily(id:number){
-    alert(id)
     this.router.navigate(['/items', id])
   } 
 
