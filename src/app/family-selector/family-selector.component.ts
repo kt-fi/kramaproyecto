@@ -10,7 +10,6 @@ import { FamilyService } from './family.service';
 export class FamilySelectorComponent implements OnInit {
 
   //Data Falso temporal, para ayuda creacion de temnplate
-
   families: Family[] = [
     new Family(1, "Family 1"),
     new Family(2, "Family 2"),
@@ -18,17 +17,22 @@ export class FamilySelectorComponent implements OnInit {
     new Family(4, "Family 4"),
   ]
 
-  constructor( public familyService: FamilyService) { }
+  constructor(public familyService: FamilyService) { }
 
   ngOnInit(): void {
-    this.familyService.getFamilies().subscribe(
-      (data) => {
-       this.families = data;
-      },
-      (err) =>{
-        console.log("An error has occured")
-      }
-    )
+    this.getFamilies();
   }
 
+
+  // Call Service para obtener familias de api para renderizar
+  private getFamilies() {
+    this.familyService.getFamilies().subscribe(
+      (data) => {
+        this.families = data;
+      },
+      (err) => {
+        console.log("An error has occured");
+      }
+    );
+  }
 }

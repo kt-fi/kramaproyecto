@@ -15,6 +15,9 @@
   /* GLOBAL STYLES */
   html {
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgb(134, 207, 255);
   }
 
     .container {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from 'src/app/shared/item';
 import { ItemsService } from '../items.service';
 
 @Component({
@@ -8,15 +9,15 @@ import { ItemsService } from '../items.service';
 })
 export class ItemComponent implements OnInit {
 
+  limitedStock: boolean = false;
 
-  get selectedItem() {
+  // obtener articulo de api para renderizar
+  get selectedItem():Item {
     return this.itemService.selectedItem
   }
 
   constructor(public itemService:ItemsService) { }
 
   ngOnInit(): void {
-    
   }
-
 }

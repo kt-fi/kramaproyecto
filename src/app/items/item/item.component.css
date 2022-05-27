@@ -1,0 +1,46 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+}
+
+.item--description {
+    margin: 5px 0 10px 0;
+    width: 100%
+}
+
+.item--text {
+    margin: 10px 10px 5px 0;
+    font-size: 15px;
+    width: 100%;
+}
+
+.item--image {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.item--price {
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.item--limited-stock {
+    background-color: yellow;
+    border-radius: 10px;
+    width: max-content;
+    padding: 7px;
+}
+
+@media screen and (max-width: 850px){
+    .item {
+        margin: 0;
+    }
+}
+

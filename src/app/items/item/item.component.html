@@ -1,8 +1,21 @@
+<!-- plantilla para cuando no esta seleccionado ningun elemento -->
+<div class="item container" *ngIf="!selectedItem; else itemSelected">
+    <div class="item--container">
+        <p>Please select an item</p>  
+    </div>
+</div>
 
-  <p *ngIf="!selectedItem; else itemSelected" >Please select an item</p>  
-
-
+<!-- plantilla para cuando se selecciona el elemento -->
 <ng-template #itemSelected>
-   <p>{{selectedItem.description}}</p> 
+  <div class="item container">
+      <div class="item--container">
+            <h3 class="item--description">{{selectedItem.description}}</h3>
+            <p class="item--text">{{selectedItem.text}}</p>
+            <img [src]="selectedItem.pictureUrl" alt="" class="item--image">
+            <p class="item--price">{{selectedItem.price | currency: "EUR"}}</p>
+ <!-- limited stock solo renderizado si hay menos de 10 unidades en stock -->           
+            <p class="item--limited-stock" *ngIf="selectedItem.stock < 10">Limited Stock</p>
+      </div>
+  </div>
 </ng-template>
 

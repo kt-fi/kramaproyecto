@@ -1,7 +1,6 @@
-<div class="container">
-    <h1 class="item--selector__header">SELECCIONA UNA ITEM</h1>
+<div class="container items--container">
+    <h1 class="item--selector__header">SELECCIONA UN ARTICULO</h1>
     <div class="item--selector" *ngIf="items">    
-        
         <ul class="item-selector__container">
             <app-item-card-small *ngFor="let item of items" [item]="item"></app-item-card-small>
         </ul>

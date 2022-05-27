@@ -8,8 +8,21 @@
 }
 
 .item:hover {
-    background-color: aqua;
+    background-color: rgb(196, 196, 196);
     cursor: pointer;
+}
+
+.item--info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item--description {
+    height: 90%;
+}
+
+.item--price {
+    background-color: ;
 }
 
 img{
