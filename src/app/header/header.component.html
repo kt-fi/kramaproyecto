@@ -1,6 +1,7 @@
 <div class="header">
     <h2 class="header-title">Catálogo de Productos</h2>
     <div class="nav">
+        <a routerLink="../family">Home</a>
         <a *ngFor="let family of families" (click)="changePage(family.id)">{{family.description}}</a>
     </div>
 </div>

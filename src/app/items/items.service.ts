@@ -28,6 +28,9 @@ export class ItemsService {
 
 // coger un articulo 
   getAnItem(itemId:number){
-    this.http.get<Item>(`https://test.krama.es:8014/item/${itemId}`).subscribe(returnedItem => this.selectedItem = returnedItem)
+    this.http.get<Item>(`https://test.krama.es:8014/item/${itemId}`)
+    .subscribe((returnedItem) => {
+      this.selectedItem = returnedItem
+    }, (err)=> console.log("an error has occured"))
   }
 }
