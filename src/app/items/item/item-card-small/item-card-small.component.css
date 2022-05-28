@@ -9,9 +9,9 @@
 }
 
 .item:hover {
-    border: 1px solid rgb(33, 245, 33);
+    border: 1px solid rgb(3, 175, 255);
     cursor: pointer;
-    color: rgb(46, 46, 46);
+    color: rgb(70, 70, 70);
 }
 
 .item--info {
