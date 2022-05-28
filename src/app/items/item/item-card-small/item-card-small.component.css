@@ -9,8 +9,9 @@
 }
 
 .item:hover {
-    background-color: rgb(196, 196, 196);
+    border: 1px solid rgb(33, 245, 33);
     cursor: pointer;
+    color: rgb(46, 46, 46);
 }
 
 .item--info {
@@ -29,9 +30,5 @@ img{
 }
 
 .itemHighlight {
-    background-color: rgb(202, 210, 255);
-}
-
-.removeItemHighlight {
-    background-color: white;
+    background-color: rgb(188, 198, 255);
 }

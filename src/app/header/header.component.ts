@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   constructor(private familyService: FamilyService, private router:Router) { }
 
   ngOnInit(): void {
-    
     this.getFamilies();
   }
 
